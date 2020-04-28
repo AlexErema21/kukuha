@@ -1,0 +1,44 @@
+		system("cls");
+		printf("1) Cпираль, скручивающаяся по часовой стрелке  "); if (key == 1) printf("<=="); cout << endl;
+		printf("2) Спираль, скручивающаяся против часовой стрелки  "); if (key == 2) printf("<=="); cout << endl;
+		printf("3) Спираль, скручивающаяся изнутри по часовой стрелке  "); if (key == 3)printf("<=="); cout << endl;
+		printf("4) Спираль, скручивающаяся изнутри против часовой стрелки  "); if (key == 4)printf("<=="); cout << endl;
+		printf("5) Сохранить спираль в файл  "); if (key == 5)printf("<=="); cout << endl;
+		printf("6) Загрузить спираль из файла  "); if (key == 6)printf("<=="); cout << endl; 
+    
+    
+    // Код
+    
+    
+    		cin.clear();
+		ch = _getch();
+		if (ch == 224) {
+			ch = _getch();
+		}
+		switch (ch)
+		{
+		case 49:
+			key = 1;
+			break;
+		case 50:
+			key = 2;
+			break;
+		case 51:
+			key = 3;
+			break;
+		case 52:
+			key = 4;
+			break;
+		case 53:
+			key = 5;
+			break;
+		case 54:
+			key = 6;
+			break;
+		case 80:key++; if (key > 6)key = 1;
+			break;
+		case 72:key--; if (key < 1)key = 6;
+			break;
+		default:
+			break;
+		}
